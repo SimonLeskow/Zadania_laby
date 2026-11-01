@@ -1,0 +1,84 @@
+body {
+    font-family: Cambria, sans-serif;
+    background-color: #f3f4f6;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2b6cb0;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #1a436f;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #dbeafe;
+    color: #1e3a5f;
+}
+
+/* Responsywność na telefon*/
+@media (max-width: 600px) {
+    header {
+        padding: 15px 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    nav a {
+        display: block;
+        width: 80%;
+        text-align: center;
+        padding: 12px;
+        background-color: #1e4e80;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    main h2 {
+        font-size: 21px;
+    }
+}
